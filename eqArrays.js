@@ -6,18 +6,17 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-
 //i: two arrays
 //o: true or false
 //each index at value must be a perfect match ===
 const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  } else {
-    return arr1.every((value, index) => {
-      return arr1[index] === arr2[index];
-    });
-  }
+  
+  //test array1 array2 values are the same as per index
+  let bool = arr1.every((value, index) => {
+    return arr1[index] === arr2[index] &&
+    arr1.length === arr2.length;
+  });
+  return bool;
 };
 
 assertEqual(eqArrays([1,2,3], [1,2,3]), true);
