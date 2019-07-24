@@ -18,9 +18,6 @@ const without = (source, itemsToRemove) => {
   let newArr = [];
 
   //check each element in source against each element in itemsToRemove
-  //
-  //
-
   for (let i = 0; i < source.length; i++) {
     for (let k = 0; k < itemsToRemove; k++) {
       if (source[i] !== itemsToRemove[k] && !newArr.includes(source[i])) {
