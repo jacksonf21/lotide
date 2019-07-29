@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅️✅️✅️ Assertion Passed: "${actual}" === "${expected}"`);
-  } else {
-    console.log(`🛑️🛑️🛑️ Assertion Failed: "${actual}" !== "${expected}"`);
-  }
-};
-
 //i: two arrays
 //o: true or false
 //each index at value must be a perfect match ===
@@ -23,10 +15,7 @@ const eqArrays = (arr1, arr2) => {
   return bool;
 };
 
-console.log(eqArrays([1,[2,3],4], [1,[2,3],4]));
-console.log(eqArrays([1,[2,[3,4]],4], [1,[2,[3,4]],4]));
-console.log(eqArrays([[[[1]]]], [[[[1]]]]));
-assertEqual(eqArrays([1,[2,[3,4]],4], [1,[2,[3,4]],4]), true);
+module.exports = eqArrays;
 /*
 assertEqual(eqArrays([], []), true);
 assertEqual(eqArrays([1,2,3], [1,2,'3']), false);
