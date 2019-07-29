@@ -41,6 +41,8 @@ const eqObjects = (object1, object2) => {
   }
 };
 
+module.exports = eqObjects;
+/*
 //TEST CASES
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
@@ -65,3 +67,4 @@ assertEqual(eqObjects(ab, abc), false);
 
 assertEqual(eqObjects(cd, dc), true);
 assertEqual(eqObjects(cd, cd2), false);
+*/
