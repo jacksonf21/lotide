@@ -17,6 +17,8 @@ const letterPositions = (string) => {
 };
 
 module.exports = letterPositions;
+
+console.log(letterPositions('test'));
 /*
 assertEqual(letterPositions('test')['t'][0],0);
 assertEqual(letterPositions('test')['t'][1],3);

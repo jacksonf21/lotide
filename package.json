@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jacksonf21/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lodash miniature clone",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,10 @@
     "type": "git",
     "url": "git+https://github.com/jacksonf21/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name": "Jackson Fung",
+    "email": "jacksonf21@hotmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jacksonf21/lotide/issues"
